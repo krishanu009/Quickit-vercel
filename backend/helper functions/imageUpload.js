@@ -22,7 +22,7 @@ const uploadImage = async (image) =>
         let imageName = generateName();
         console.log("imageName",imageName);
         let dataToSend = {
-            key:"631e1bdac7a0d851657f6d7ac63100cf",
+            key: process.env.IMAGE_KEY,
             image:image,
             name:imageName
     
